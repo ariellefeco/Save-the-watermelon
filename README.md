@@ -1,25 +1,53 @@
-Project description.
-This is a word guessing game in Python where a player must guess the secret word in the alloted guesses in order to win.
-There are three modules in this game called: 
-words.py which organizes data,
-logic.py which displays the rules and determines whether an input is correct or not, 
-game.py which is the game the player will get to partake in
+# Save the Watermelon
 
-Game rules.
-The player must guess a secret word with a limited amount of guesses in order to save the watermelon slices
-Each round, the player inputs a letter and the program outputs if it was correct or not
-If the player guesses the word before running out of slices, they win
-If not, the player loses
+## Project Description
+Save the Watermelon is a terminal-based Python word-guessing game. The computer chooses a word, and the player guesses one letter at a time to reveal it before using all six slices.
 
-Instructions for running the program.
-Open the project in PyCharm, find the code directory on the left side. Run the script using python.
+## Game Rules
+- Guess one letter per turn.
+- Correct guesses reveal every occurrence of the letter.
+- Incorrect valid guesses use one slice.
+- Invalid or repeated guesses do not use a slice.
+- Reveal the entire word to win.
+- Run out of slices before revealing the word and you lose.
+- Choose whether to play another round after each game.
 
-Features implemented.
-Ensures that inputs are single English alphabet letters and not numbers
-Prevents players from guessing the same letter and losing slices
-Includes a loop that players can choose to play again without having to restart the game
-Able to differentiate capitalized and lowercase letters by using the .lower() input
+## Requirements
+- Python 3
+- A terminal or IDE that can run Python
 
-Known issues or limitations, if any.
-The game does not have any graphics, so you must imagine losing watermelon slices
-The words are used from a predetermined list and not actually random.
+## Run the Program
+From the root folder of the repository, run:
+
+```bash
+python src/game.py
+```
+
+If your system uses `python3` instead, run:
+
+```bash
+python3 src/game.py
+```
+
+## Project Structure
+- `src/game.py`: runs the game and replay loop.
+- `src/logic.py`: contains word display, validation, guess processing, and win-checking functions.
+- `src/words.py`: contains the word list and random word selection.
+- `docs/design.md`: design document.
+- `docs/pseudocode.md`: pseudocode.
+- `docs/test-plan.md`: test cases and results.
+
+## Features
+- Random word selection
+- Hidden word display
+- Case-insensitive guesses
+- Input validation
+- Repeated-guess detection
+- Six incorrect guesses allowed
+- Win/loss detection
+- Replay option
+
+## Known Limitations
+- Words are selected from a fixed list in `src/words.py`.
+- The game accepts English letters A to Z only.
+- Test results must be completed after running the tests.
