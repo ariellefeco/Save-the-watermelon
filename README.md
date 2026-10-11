@@ -1,3 +1,11 @@
+PROJECT VIDEO PRESENTATION LINK:
+Because the file size of the video is too large, you can access the screen recording through this link:
+
+**https://drive.google.com/file/d/1IHG_np0jPBFW5HaeIOymZWiCuOg4Jt1Q/view?usp=sharing 
+**
+
+***Since I am using a Chromebook, Zoom clips does not work for me and I cannot screen record through Zoom. However, I still screen shared through Zoom so that my face could be visible.***
+
 Project description.
 This is a word guessing game in Python where a player must guess the secret word in the allotted guesses in order to win.
 There are three modules in this game called: 
